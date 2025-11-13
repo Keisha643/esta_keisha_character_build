@@ -1,0 +1,167 @@
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-feature-settings: "smcp" on;
+    background-color: rgb(32, 29, 39);
+    color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;  */
+    padding: 10px 0;
+    background-image: url(../images/bsd-bg-2.jpeg)
+}
+
+#main-logo {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    filter: drop-shadow(8px 8px 10px rgb(75, 75, 75));
+    border-radius: 20%;
+}
+
+#character-nav {
+    background-color: #675050;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('../images/bsd-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#characters {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#characters li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#characters li img {
+    border: double 7px rgba(109, 106, 107, 0.935);
+    padding: 10px;
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: 20px 20px 50px 10px rgba(255, 255, 255, 0.161) inset;
+    transition: all .3s ease-in-out;
+    border-radius: 20% 20% 20% 5%;
+    transform: rotate(0deg);
+}
+
+#characters li a {
+    text-decoration: none;
+}
+
+#characters li img:hover {
+    filter: grayscale(100%);
+    filter: blur(1px);
+    border-radius: 60% 60% 60% 5%;
+    /* transition: all .5s ease-in-out; */
+    border-right: 5px rgba(66, 66, 66);
+    border-block-end-style: inherit;
+    box-shadow: 20px 20px 50px 10px rgba(0, 0, 0, 0.307) inset;
+    transform: rotate(-5deg);
+    
+}
+
+#instructions {
+    padding: 20px;
+}
+
+#instructions h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#instructions p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#main-footer {
+    height: 80px;
+    background-color: rgb(116, 114, 114);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 75vh;
+    background-position: 48px top;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(4, 4, 4, 0), rgba(224, 224, 224, 0.4)); 
+    backdrop-filter: blur(2px);
+}
+
+.lightbox:target {
+    display: block;
+}
+
+#lightbox1 {
+    background-image: url(../images/NA-LB-bg.png);
+}
+
+#lightbox2 {
+    background-image: url(../images/AR-LB-bg.png);
+}
+
+#lightbox3 {
+    background-image: url(../images/DO-LB-bg.png); 
+}
+
+#lightbox4 {
+    background-image: url(../images/NC-LB-bg.png);
+    
+}
+
+.lightbox-close {
+    color: white;
+    font-size: 46px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 95vw;
+    transition: all .2s ease-in-out;
+}
+
+.lightbox-close:hover {
+    color: rgb(104, 21, 21);
+}
+
+.lightbox section {
+    width: 600px;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.lb-heading {
+    font-size: 32px;
+    font-style: italic;
+    text-shadow: 5px 5px 5px rgb(98, 98, 98);
+    letter-spacing: 7px;
+    font-weight: bold;
+}
+
+.lightbox p {
+    line-height: 30px;
+    font-variant-caps: all-petite-caps;
+    font-weight: 400;
+    text-indent: 35px;
+}
