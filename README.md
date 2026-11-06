@@ -1,4 +1,4 @@
-# esta_keisha_character_build
+# Bungou Stray Dogs Character Build
 This is Homework 2 in the Multimedia Authoring 1. I am creating a character build webpage based on the Anime series, Bungou Stray Dogs. Complete with the folder structure, readme file, correctly named branches, CSS selection and styles.
 ## Installation
 No installation required. Simply download the zip file and extract
